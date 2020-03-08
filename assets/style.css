@@ -1,0 +1,108 @@
+*{
+    margin: 0;;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    width: 98%;
+    margin: auto;
+    overflow: auto;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+header{
+    margin: auto;
+    background-color: #00c8eb;
+}
+
+.jumbotron{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.jumbotron h1{
+    align-self: center;
+    font-size: 4em;
+    color: white;
+}
+
+#authorPhoto{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+nav {
+    background-color: #00a2c6;   
+}
+
+.navlinks{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+
+nav a {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.educations,
+.experience,
+.profile{
+    margin-top: 15px;
+}
+
+article{
+    margin: 10px;
+}
+
+.content{
+    float: left;
+    width: 70%;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    background-color: #00c8eb;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+table{
+    padding: 10px;
+    font-size: 20px;
+    
+}
