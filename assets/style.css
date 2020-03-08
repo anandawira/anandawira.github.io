@@ -105,7 +105,9 @@ footer p{
 table{
     padding: 10px;
     font-size: 20px;
-    
+}
+td{
+    vertical-align: top;
 }
 
 @media screen and (max-width: 1430px) {
@@ -114,10 +116,9 @@ table{
         width: 100%;
     }
     aside{
-        margin: auto;
-        margin-bottom: 20px;
         float: none;
-        width: 90%;
+        margin: auto;
+        width: 80%;
     }
 }
 
@@ -160,19 +161,28 @@ table{
     }
 
     nav{
-        position: absolute;
-        visibility: hidden;    
+        display: none;  
     }
 }
 
 @media screen and (max-width: 440px) {
+    .jumbotron{
+        width: 100%;
+        text-align: center;
+    }
 
     .jumbotron h1{
         font-size: 1.5em;
     }
 
     #authorPhoto{
-        position: absolute;
-        visibility: hidden;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 472px) {
+
+    aside{
+        display: none;
     }
 }
