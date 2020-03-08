@@ -31,7 +31,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 5px;
 }
 
 .jumbotron h1{
@@ -41,8 +41,9 @@ header{
 }
 
 #authorPhoto{
-    width: 200px;
-    height: auto;
+    margin: 20px;
+    align-self: center;
+    height: 200px;
     border-radius: 50%;
     border: 6px solid white;
 }
@@ -105,4 +106,73 @@ table{
     padding: 10px;
     font-size: 20px;
     
+}
+
+@media screen and (max-width: 1430px) {
+    .content{
+        float: none;
+        width: 100%;
+    }
+    aside{
+        margin: auto;
+        margin-bottom: 20px;
+        float: none;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1383px) {
+    .jumbotron h1{
+        font-size: 3em;
+    }
+    .navlinks{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    .navlinks a{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .navlinks a{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .jumbotron h1{
+        font-size: 2em;
+    }
+
+
+    #authorPhoto{
+        margin: 20px;
+        align-self: center;
+        height: 120px;
+        border-radius: 50%;
+        border: 6px solid white;
+    }
+
+    nav{
+        position: absolute;
+        visibility: hidden;    
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .jumbotron h1{
+        font-size: 1.5em;
+    }
+
+    #authorPhoto{
+        position: absolute;
+        visibility: hidden;
+    }
 }
