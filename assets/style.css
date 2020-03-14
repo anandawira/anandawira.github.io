@@ -1,188 +1,188 @@
 *{
-    margin: 0;;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+br{
+    display: block;
+    content: "";
+    margin-top: 10px;
+}
+
+#jumbotron{
+    background-color: #F38169;
+    color: white;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+#jumbotron h1{
+    text-align: center;
+    line-height: 1.1em;
+    width: 60%;
+    margin: auto;
+    font-size: 70px;
+}
+
+header{
+    display: inline;
+}
+
+nav{
+    background-color: #F38169;
+    opacity: 80%;
+    position: sticky;
+    top: 0;
+}
+
+#navlinks{
+    margin: auto;
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#navlinks p{
+    text-align: center;
+    flex-grow: 1;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#navlinks p a{
+    text-decoration: none;
+    color: white;
 }
 
 main{
-    width: 98%;
+    display: flex;
+}
+
+#content,
+aside{
+    margin: 15px;
+}
+
+#content{
+    flex-grow: 1;
+}
+
+#content p{
+    font-size: 20px;
+}
+
+#content img{
+    width: 500px;
+}
+
+article{
+    background-color: #FAF6F4;
+}
+
+aside{
+    flex: 0 0 500px;
+    font-size: 23px;
+    display: inline;
+}
+
+aside table{
     margin: auto;
-    overflow: auto;
+    background-color: #DADDD8;
+    position: sticky;
+    top: 80px;
+}
+
+aside img{
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 40%;
+}
+
+aside td{
+    vertical-align: top;
 }
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 25px;
-    margin-top: 20px;
-}
-
-header{
-    margin: auto;
-    background-color: #00c8eb;
-}
-
-.jumbotron{
-    width: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px;
-}
-
-.jumbotron h1{
-    align-self: center;
-    font-size: 4em;
-    color: white;
-}
-
-#authorPhoto{
-    margin: 20px;
-    align-self: center;
-    height: 200px;
-    border-radius: 50%;
-    border: 6px solid white;
-}
-
-nav {
-    background-color: #00a2c6;   
-}
-
-.navlinks{
-    width: 70%;
-    margin: auto;
-    padding: 10px;
-    display: flex;
-}
-
-nav a {
-    text-align: center;
-    flex-grow: 1;
-    font-size: 30px;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.educations,
-.experience,
-.profile{
-    margin-top: 15px;
-}
-
-article{
-    margin: 10px;
-}
-
-.content{
-    float: left;
-    width: 70%;
-}
-
-aside{
-    float: right;
-    width: 25%;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 
 footer{
+    background-color: #4ECDC4;
+    height: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 75px;
-    background-color: #00c8eb;
-}
-footer p{
-    text-align: center;
-    color: white;
-    font-size: 25px;
-}
-table{
-    padding: 10px;
-    font-size: 20px;
-}
-td{
-    vertical-align: top;
 }
 
-@media screen and (max-width: 1430px) {
-    .content{
-        float: none;
-        width: 100%;
-    }
-    aside{
-        float: none;
-        margin: auto;
+footer p{
+    align-self: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1315px) {
+    #jumbotron h1{
         width: 80%;
     }
+
+    main{
+        flex-direction: column;
+    }
+
+    aside table{
+        position: static;
+    }
+
+    aside img{
+        width: 150px;
+    }
 }
 
-@media screen and (max-width: 1383px) {
-    .jumbotron h1{
-        font-size: 3em;
+@media screen and (max-width: 1100px) {
+    #jumbotron{
+        height: 200px;
     }
-    .navlinks{
+
+    #jumbotron h1{
+        font-size: 50px;
+    }
+
+    #navlinks{
         width: 90%;
+        height: 40px;
+    }
+
+    #navlinks p{
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width: 1130px) {
-
-    .navlinks a{
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 730px) {
-
-    .navlinks a{
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 620px) {
-
-    .jumbotron h1{
-        font-size: 2em;
-    }
-
-
-    #authorPhoto{
-        margin: 20px;
-        align-self: center;
+@media screen and (max-width: 600px) {
+    #jumbotron{
         height: 120px;
-        border-radius: 50%;
-        border: 6px solid white;
     }
 
-    nav{
-        display: none;  
+    #jumbotron h1{
+        font-size: 30px;
     }
-}
-
-@media screen and (max-width: 440px) {
-    .jumbotron{
-        width: 100%;
-        text-align: center;
+    #content img{
+        width: 200px;
     }
 
-    .jumbotron h1{
-        font-size: 1.5em;
-    }
-
-    #authorPhoto{
+    aside{
         display: none;
     }
 }
-
-@media screen and (max-width: 472px) {
-
-    aside{
+@media screen and (max-width: 300px) {
+    #navlinks{
         display: none;
     }
 }
